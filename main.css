@@ -43,5 +43,6 @@ body:has(#radio-t-ball:checked) #dpc-info-t-ball,
 body:has(#radio-j-fin:checked) #dpc-info-j-fin,
 body:has(#radio-j-ball:checked) #dpc-info-j-ball,
 body:has(#radio-i-fb:checked) #dpc-info-i-fb,
+body:has(#radio-i-tki:checked) #dpc-info-i-tki,
 #youlostthegame
 { display: block }
