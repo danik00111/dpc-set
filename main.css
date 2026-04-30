@@ -1,55 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  text-align: center;
-  box-sizing: border-box;
-  font-family: 'JetBrains Mono', monospace;
-  color: white;
+  margin: 0; padding: 0;
+  border: 0; outline: 0;
+  text-align: center; box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace; color: white;
 }
-a { color: #09f }
-a:visited { color: #c06 }
-html {
-  background-color: #111;
-}
-.dpc-section-header {
-  margin: 16px auto;
-}
+a { color: #09f } a:visited { color: #c06 }
+html { background-color: #111; }
+.dpc-section-header { margin: 16px auto; }
 .dpc-box-section {
-  display: flex;
-  flex-direction: row;
+  display: flex; flex-direction: row;
+  align-items: center; justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 .dpc-box {
-  width: 256px;
-  height: 200px;
-  border-radius: 16px;
-  margin: 8px;
-  padding: 8px;
-  border: gray 2px solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  cursor: pointer;
+  width: 256px; height: 200px;
+  margin: 8px; padding: 8px;
+  border: gray 2px solid; border-radius: 16px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: space-between;
+  position: relative; cursor: pointer;
 }
-.dpc-box:has(.dpc-radio:checked) {
-  border: 2px solid white;
-}
-.dpc-img {
-  image-rendering: pixelated;
-  border-radius: 16px;
-}
-.dpc-radio {
-  position: absolute;
-  right: 8px; top: 8px;
-  display: none;
-}
+.dpc-box:has(.dpc-radio:checked) { border: 2px solid white }
+.dpc-img { image-rendering: pixelated; border-radius: 16px }
+.dpc-radio { position: absolute; right: 8px; top: 8px; display: none }
 .dpc-info { display:none }
 
 /* no this works just fine no thanks i dont need js */
