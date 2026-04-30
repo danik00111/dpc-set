@@ -52,6 +52,7 @@ html {
 }
 .dpc-info { display:none }
 
+/* no this works just fine no thanks i dont need js */
 body:has(#radio-o-2l:checked) #dpc-info-o-2l,
 body:has(#radio-o-tsd:checked) #dpc-info-o-tsd,
 body:has(#radio-o-butter:checked) #dpc-info-o-butter,
