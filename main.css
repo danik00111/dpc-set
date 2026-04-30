@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+}
+a { color: #09f }
+a:visited { color: #c06 }
+html {
+  background-color: #111;
+}
+.dpc-section-header {
+  margin: 16px auto;
+}
+.dpc-box-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.dpc-box {
+  width: 256px;
+  height: 200px;
+  border-radius: 16px;
+  margin: 8px;
+  padding: 8px;
+  border: gray 2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+.dpc-box:has(.dpc-radio:checked) {
+  border: 2px solid white;
+}
+.dpc-img {
+  image-rendering: pixelated;
+  border-radius: 16px;
+}
+.dpc-radio {
+  position: absolute;
+  right: 8px; top: 8px;
+  display: none;
+}
+.dpc-info { display:none }
+
+body:has(#radio-o-2l:checked) #dpc-info-o-2l,
+body:has(#radio-o-tsd:checked) #dpc-info-o-tsd,
+body:has(#radio-o-butter:checked) #dpc-info-o-butter,
+body:has(#radio-o-tki:checked) #dpc-info-o-tki,
+body:has(#radio-o-anku:checked) #dpc-info-o-anku,
+body:has(#radio-o-rel:checked) #dpc-info-o-rel,
+body:has(#radio-o-theguynobodyinvited:checked) #dpc-info-o-theguynobodyinvited,
+body:has(#radio-z-tsd:checked) #dpc-info-z-tsd,
+body:has(#radio-z-tkiholdo:checked) #dpc-info-z-tkiholdo,
+body:has(#radio-z-thisdork:checked) #dpc-info-z-thisdork,
+body:has(#radio-z-fakebutter:checked) #dpc-info-z-fakebutter,
+body:has(#radio-t-ud:checked) #dpc-info-t-ud,
+body:has(#radio-t-ball:checked) #dpc-info-t-ball,
+body:has(#radio-j-fin:checked) #dpc-info-j-fin,
+body:has(#radio-j-ball:checked) #dpc-info-j-ball,
+body:has(#radio-i-fb:checked) #dpc-info-i-fb,
+#youlostthegame
+{ display: block }
