@@ -9,6 +9,7 @@ a { color: #09f } a:visited { color: #c06 }
 html { background-color: #111; }
 .dpc-section-header { margin: 16px auto; }
 .dpc-box-section {
+  max-width: 2048px; margin: 0 auto;
   display: flex; flex-direction: row;
   align-items: center; justify-content: center;
   flex-wrap: wrap;
@@ -21,6 +22,7 @@ html { background-color: #111; }
   align-items: center; justify-content: space-between;
   position: relative; cursor: pointer;
 }
+.dpc-title { max-width: 236px }
 .dpc-box:has(.dpc-radio:checked) { border: 2px solid white }
 .dpc-img { image-rendering: pixelated; border-radius: 16px }
 .dpc-radio { position: absolute; right: 8px; top: 8px; display: none }
@@ -34,8 +36,10 @@ body:has(#radio-o-tki:checked) #dpc-info-o-tki,
 body:has(#radio-o-anku:checked) #dpc-info-o-anku,
 body:has(#radio-o-rel:checked) #dpc-info-o-rel,
 body:has(#radio-o-theguynobodyinvited:checked) #dpc-info-o-theguynobodyinvited,
-body:has(#radio-z-tsd:checked) #dpc-info-z-tsd,
+body:has(#radio-z-mech-holdz:checked) #dpc-info-z-mech-holdz,
 body:has(#radio-z-tkiholdo:checked) #dpc-info-z-tkiholdo,
+body:has(#radio-z-tsd:checked) #dpc-info-z-tsd,
+body:has(#radio-z-tki:checked) #dpc-info-z-tki,
 body:has(#radio-z-thisdork:checked) #dpc-info-z-thisdork,
 body:has(#radio-z-fakebutter:checked) #dpc-info-z-fakebutter,
 body:has(#radio-t-ud:checked) #dpc-info-t-ud,
@@ -46,3 +50,31 @@ body:has(#radio-i-fb:checked) #dpc-info-i-fb,
 body:has(#radio-i-tki:checked) #dpc-info-i-tki,
 #youlostthegame
 { display: block }
+
+.dpc-box.dpc-box-todo { border-color: brown }
+.dpc-box.dpc-box-todo:has(.dpc-radio:checked) { border-color: coral }
+body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
+
+.dpc-box-new {
+  cursor: pointer;
+  width: fit-content; height: 200px;
+  /* the 404 is 256 +192 +2*8 +2*2. image + info + padding + border in that order. */
+  margin: 8px; padding: 8px;
+  border: gray 2px solid; border-radius: 16px;
+  display: flex; flex-direction: row;
+  justify-content: space-around;
+}
+.dpc-box-new:has(.dpc-radio:checked) { border: 2px solid white }
+.dpc-box-new-main {
+  width: 256px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: space-between;
+  position: relative; cursor: pointer;
+}
+.dpc-box-new-info {
+  width: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}

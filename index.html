@@ -13,7 +13,11 @@
   Similar solves are grouped together into one image.<br/>
   Feel like I'm missing some good SPC/DPC?<br/>
   Contact me on <a href="https://discord.gg/tetrio" target="_blank">Tetriocord</a> (danik0011_) or on <a href="https://ch.tetr.io/u/618513a612d3f9b32bf66b83" target="_blank">TETR.IO</a>.<br/>
-  <i>Note that this page only displays the DPCs I know and use.</i><br/>
+  Note that this page only displays the DPCs I know and use.<br/>
+  <input type="checkbox" id="displaytodo"> <label for="displaytodo" style="cursor:pointer">Display DPCs I'm still learning</label><br/><br/>
+  If you didn't notice yet, this website is a heavy WIP.<br/>
+  I'm experimenting with a new, more informative DPC preview tile (see O/2L).<br/>
+  Except I still need to get the numbers for all of these. And make up my mind on how to count score.
 
   <div class="dpc-section">
     
@@ -56,13 +60,15 @@
       </div>
       <div class="dpc-info" id="dpc-info-o-tki">
         <div>
-          <img src="./img/o-dpc/tki/main.png">
-          <img src="./img/o-dpc/tki/kpp.png">
+          <img src="./img/tki-dpc/main.png">
+          <img src="./img/tki-dpc/kpp.png">
+          <img src="./img/tki-dpc/shift.png">
         </div>
         Scores very solid, despite having One™ solve (Fig. 1). Can quad or TSD.<br/>
-        I only attached the second solve because it is a surprise tool that will come in handy later.<br/>
+        I only attached Fig. 2 because it is a surprise tool that will come in handy later.<br/>
         Also, it may help reduce KPP with das-preserve JT placement.<br/>
-        May be used if there's no scoring and/or you don't care about it due to playing sprint.
+        May be used if there's no scoring and/or you don't care about it due to playing sprint.<br/>
+        Has extra scoring if you instead place O one away from the wall (see Fig. 3).
       </div>
       <div class="dpc-info" id="dpc-info-o-anku">
         <div>
@@ -104,10 +110,17 @@
     </div>
 
     <div class="dpc-box-section">
-      <label class="dpc-box" for="radio-o-2l">
-        <span class="dpc-title">2L to ZST 7th</span>
-        <img src="./img/o-dpc/2l.png" class="dpc-image">
-        <input type="radio" name="o-dpc" id="radio-o-2l" class="dpc-radio">
+      <label class="dpc-box-new" for="radio-o-2l">
+        <div class="dpc-box-new-main">
+          <span class="dpc-title">2L to ZST 7th</span>
+          <img src="./img/o-dpc/2l.png" class="dpc-image">
+          <input type="radio" name="o-dpc" id="radio-o-2l" class="dpc-radio">
+        </div>
+        <div class="dpc-box-new-info">
+          <div>Score: xxxx.xx</div>
+          <div>Bad%: xx.xx%</div>
+          <div>PC%: xx.xx%</div>
+        </div>
       </label>
       <label class="dpc-box" for="radio-o-tsd">
         <span class="dpc-title">TSD DPC</span>
@@ -146,7 +159,16 @@
   <div class="dpc-section">
 
     <h2 class="dpc-section-header">Z DPC</h2>
-          <div class="dpc-info" id="dpc-info-z-tkiholdo">
+    <div class="dpc-info-section">
+      <div class="dpc-info" id="dpc-info-z-mech-holdz">
+        <div>
+          <img src="./img/z-dpc/mech-holdz/familiar.png">
+          <img src="./img/z-dpc/mech-holdz/tss.png">
+          <img src="./img/z-dpc/mech-holdz/zz.png">
+        </div>
+        Effectively turns into Shifted TKI if you place Z234. Here are the solves that don't do that.
+      </div>
+      <div class="dpc-info" id="dpc-info-z-tkiholdo">
         <div>
           <img src="./img/z-dpc/tkiholdo/main.png">
           <img src="./img/z-dpc/tkiholdo/extra1.png">
@@ -156,7 +178,6 @@
         <br/>Figs. 2 and 3 are optional. But it scores more than TSD DPC with them.<br/>
         Also try to hold J from setup for uhhhhhhhh something idk (no new solves from that)
       </div>
-    <div class="dpc-info-section">
       <div class="dpc-info" id="dpc-info-z-tsd">
         <div>
           <img src="./img/tsd/sol1.gif">
@@ -169,6 +190,21 @@
         In solve 2, placing everything but TI and skimming line 3 still gives TSD (just without B2B).<br/>
         I recommend taking solve 3 whenever you see early TI to avoid risks.<br/>
         Notice how the L piece is always there.
+      </div>
+      <div class="dpc-info" id="dpc-info-z-tki">
+        <div>
+          <img src="./img/z-dpc/tki1.png">
+          <img src="./img/z-dpc/tki2.png">
+          <img src="./img/z-dpc/tki3.png">
+          <img src="./img/z-dpc/tki4.png">
+        </div>
+        <div>
+          <img src="./img/tki-dpc/main-shift-m.png">
+          <img src="./img/tki-dpc/main-shift  .png">
+        </div>
+        Literally TKI with the O piece on the other side.
+      </div>
+      <div class="dpc-info" id="dpc-info-z-tki">
       </div>
       <div class="dpc-info" id="dpc-info-z-thisdork">
         [insert a 100word rant of heavy personal hatred against l*me]<br/>
@@ -192,7 +228,7 @@
           <img src="./img/z-dpc/thisdork/c-heart.png">
           <img src="./img/z-dpc/thisdork/sl-oi.png">
         </div>
-        Fig. 3's green area is the JST from O-TKI. As you remember, it can be filled in 3 ways.<br/><br/>
+        Fig. 3's green area is the JST from TKI DPC. As you remember, it can be filled in 3 ways.<br/><br/>
         In conclusion, you should <i>really</i> go ahead and <a target="_blank" href="https://himitsuconfidential.github.io/downstack-practice/usermode.html/_______________XX________XX__XX___XXXXXX=*!">drill</a> this DPC to learn it.
       </div>
       <div class="dpc-info" id="dpc-info-z-fakebutter">
@@ -204,6 +240,11 @@
     </div>
 
     <div class="dpc-box-section">
+      <label class="dpc-box dpc-box-todo" for="radio-z-mech-holdz">
+        <span class="dpc-title">Mech v3 (Hold Z)</span>
+        <img src="./img/z-dpc/mech-holdz.png" class="dpc-image">
+        <input type="radio" name="z-dpc" id="radio-z-mech-holdz" class="dpc-radio">
+      </label>
       <label class="dpc-box" for="radio-z-tkiholdo">
         <span class="dpc-title">TKI Hold O DPC</span>
         <img src="./img/z-dpc/tkiholdo.png" class="dpc-image">
@@ -213,6 +254,11 @@
         <span class="dpc-title">TSD DPC</span>
         <img src="./img/z-dpc/tsd.png" class="dpc-image">
         <input type="radio" name="z-dpc" id="radio-z-tsd" class="dpc-radio">
+      </label>
+      <label class="dpc-box dpc-box-todo" for="radio-z-tki">
+        <span class="dpc-title">TKI DPC</span>
+        <img src="./img/z-dpc/tki.gif" class="dpc-image">
+        <input type="radio" name="z-dpc" id="radio-z-tki" class="dpc-radio">
       </label>
       <label class="dpc-box" for="radio-z-thisdork">
         <span class="dpc-title">l*me DPC</span>
@@ -239,7 +285,7 @@
           <img src="./img/t-spc/ud/nontriv1.png">
           <img src="./img/t-spc/ud/nontriv2.gif">
         </div>
-        <b>Not 100%.</b> Fails on [OLJ]!,ZTSI and [LJ]!,ZOTSI.
+        Good scoring, with one slight caveat: This DPC fails on the rare queues [OLJ]!,ZTSI and [LJ]!,ZOTSI.
       </div>
       <div class="dpc-info" id="dpc-info-t-ball">
         <div><img src="./img/t-spc/ball-solve.png"></div>
@@ -286,6 +332,11 @@
         <img src="./img/j-dpc/fin.png" class="dpc-image">
         <input type="radio" name="j-dpc" id="radio-j-fin" class="dpc-radio">
       </label>
+      <label class="dpc-box dpc-box-todo" for="radio-j-bb" style="height: fit-content;">
+        <span class="dpc-title">Blue Butter DPC</span>
+        <img src="./img/j-dpc/bb.png" class="dpc-image">
+        <input type="radio" name="j-dpc" id="radio-j-bb" class="dpc-radio">
+      </label>
       <label class="dpc-box" for="radio-j-ball">
         <span class="dpc-title">Ball -PC</span>
         <img src="./img/j-dpc/ball.png" class="dpc-image">
@@ -305,7 +356,7 @@
         I almost never save I, and therefore do not feel any need to learn I SPC/DPC.<br/>
       </div>
       <div class="dpc-info" id="dpc-info-i-tki">
-        <div><img src="./img/i-dpc/tki-solve.png"></div>
+        <div><img src="./img/tki-dpc/main-shift.png"></div>
         Literally TKI with the O piece on the other side.<br/>
         I almost never save I, and therefore do not feel any need to learn I SPC/DPC,<br/>
         but you just <i>cannot</i> miss out on this one.
@@ -313,13 +364,13 @@
     </div>
 
     <div class="dpc-box-section">
-      <label class="dpc-box" for="radio-i-fb" style="height: fit-content;">
+      <label class="dpc-box" for="radio-i-fb">
         <span class="dpc-title">Fake Butter DPC</span>
         <img src="./img/i-dpc/fb.png" class="dpc-image">
         <input type="radio" name="i-dpc" id="radio-i-fb" class="dpc-radio">
       </label>
-      <label class="dpc-box" for="radio-i-tki" style="height: fit-content;">
-        <span class="dpc-title">Shifted TKI DPC</span>
+      <label class="dpc-box" for="radio-i-tki">
+        <span class="dpc-title">TKI DPC</span>
         <img src="./img/i-dpc/tki.png" class="dpc-image">
         <input type="radio" name="i-dpc" id="radio-i-tki" class="dpc-radio">
       </label>
