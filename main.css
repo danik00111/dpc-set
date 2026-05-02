@@ -27,7 +27,7 @@ html { background-color: #111; }
 .dpc-img { image-rendering: pixelated; border-radius: 16px }
 .dpc-radio {
   position: absolute; right: 8px; top: 8px;
-  /* display: none */
+  display: none
 }
 .dpc-info { display:none }
 
