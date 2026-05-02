@@ -25,7 +25,10 @@ html { background-color: #111; }
 .dpc-title { max-width: 236px }
 .dpc-box:has(.dpc-radio:checked) { border: 2px solid white }
 .dpc-img { image-rendering: pixelated; border-radius: 16px }
-.dpc-radio { position: absolute; right: 8px; top: 8px; display: none }
+.dpc-radio {
+  position: absolute; right: 8px; top: 8px;
+  /* display: none */
+}
 .dpc-info { display:none }
 
 /* no this works just fine no thanks i dont need js */
@@ -45,6 +48,7 @@ body:has(#radio-z-fakebutter:checked) #dpc-info-z-fakebutter,
 body:has(#radio-t-ud:checked) #dpc-info-t-ud,
 body:has(#radio-t-ball:checked) #dpc-info-t-ball,
 body:has(#radio-j-fin:checked) #dpc-info-j-fin,
+body:has(#radio-j-bb:checked) #dpc-info-j-bb,
 body:has(#radio-j-ball:checked) #dpc-info-j-ball,
 body:has(#radio-i-fb:checked) #dpc-info-i-fb,
 body:has(#radio-i-tki:checked) #dpc-info-i-tki,
