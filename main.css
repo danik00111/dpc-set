@@ -4,6 +4,7 @@
   border: 0; outline: 0;
   text-align: center; box-sizing: border-box;
   font-family: 'JetBrains Mono', monospace; color: white;
+  user-select: none;
 }
 a { color: #09f } a:visited { color: #c06 }
 html { background-color: #111; }
