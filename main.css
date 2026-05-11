@@ -82,3 +82,13 @@ body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
   align-items: center;
   justify-content: space-around;
 }
+label[for="displaytodo"] {
+  cursor: pointer;
+  background: #333;
+  padding: 2px;
+  border-radius: 4px;
+}
+body:has(#displaytodo:checked) label[for="displaytodo"] { background: #666 }
+#displaytodo-display,#displaytodo-hide{display:none}
+body:has(#displaytodo:checked) #displaytodo-hide {display:inline}
+body:not(:has(#displaytodo:checked)) #displaytodo-display {display:inline}
