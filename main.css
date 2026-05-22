@@ -25,7 +25,14 @@ html { background-color: #111; }
 }
 .dpc-title { max-width: 236px }
 .dpc-box:has(.dpc-radio:checked) { border: 2px solid white }
-.dpc-img { image-rendering: pixelated; border-radius: 16px }
+img { image-rendering: pixelated }
+.dpc-image {
+  width: 220px;
+  height: 154px;
+  display: flex;
+  object-fit: none;
+  object-position: bottom;
+}
 .dpc-radio {
   position: absolute; right: 8px; top: 8px;
   display: none
@@ -60,22 +67,25 @@ body:has(#radio-i-tki:checked) #dpc-info-i-tki,
 .dpc-box.dpc-box-todo:has(.dpc-radio:checked) { border-color: coral }
 body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
 
+.dpc-box-new.dpc-box-todo { border-color: brown } .dpc-box-new.dpc-box-todo:has(.dpc-radio:checked) { border-color: coral } /* remove later */
+
 .dpc-box-new {
   cursor: pointer;
-  width: fit-content; height: 200px;
+  width: fit-content; height: 256px;
   /* the 404 is 256 +192 +2*8 +2*2. image + info + padding + border in that order. */
   margin: 8px; padding: 8px;
   border: gray 2px solid; border-radius: 16px;
   display: flex; flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 .dpc-box-new:has(.dpc-radio:checked) { border: 2px solid white }
 .dpc-box-new-main {
-  width: 256px;
+  /* width: 236px; */
   display: flex; flex-direction: column;
   align-items: center; justify-content: space-between;
   position: relative; cursor: pointer;
 }
+.dpc-title { margin-bottom: 8px } .dpc-box-new-main div { margin-top: 8px }
 .dpc-box-new-info {
   width: 192px;
   display: flex;
