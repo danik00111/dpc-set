@@ -15,16 +15,6 @@ html { background-color: #111; }
   align-items: center; justify-content: center;
   flex-wrap: wrap;
 }
-.dpc-box {
-  width: 256px; height: 200px;
-  margin: 8px; padding: 8px;
-  border: gray 2px solid; border-radius: 16px;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: space-between;
-  position: relative; cursor: pointer;
-}
-.dpc-title { max-width: 236px }
-.dpc-box:has(.dpc-radio:checked) { border: 2px solid white }
 img { image-rendering: pixelated }
 .dpc-image {
   width: 220px;
@@ -38,6 +28,45 @@ img { image-rendering: pixelated }
   display: none
 }
 .dpc-info { display:none }
+
+.dpc-box.dpc-box-todo { border-color: brown }
+.dpc-box.dpc-box-todo:has(.dpc-radio:checked) { border-color: coral }
+body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
+
+.dpc-box {
+  cursor: pointer;
+  width: fit-content; height: 256px;
+  /* the 404 is 256 +192 +2*8 +2*2. image + info + padding + border in that order. */
+  margin: 8px; padding: 8px;
+  border: gray 2px solid; border-radius: 16px;
+  display: flex; flex-direction: row;
+  /* justify-content: space-around; */
+}
+.dpc-box:has(.dpc-radio:checked) { border: 2px solid white }
+.dpc-box-main {
+  /* width: 236px; */
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: space-between;
+  position: relative; cursor: pointer;
+}
+.dpc-title { max-width: 236px; margin-bottom: 8px } .dpc-box-main div { margin-top: 8px }
+.dpc-box-info {
+  width: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+label[for="displaytodo"] {
+  cursor: pointer;
+  background: #333;
+  padding: 2px;
+  border-radius: 4px;
+}
+body:has(#displaytodo:checked) label[for="displaytodo"] { background: #666 }
+#displaytodo-display,#displaytodo-hide {display:none}
+body:has(#displaytodo:checked) #displaytodo-hide {display:inline}
+body:not(:has(#displaytodo:checked)) #displaytodo-display {display:inline}
 
 /* no this works just fine no thanks i dont need js */
 body:has(#radio-o-2l:checked) #dpc-info-o-2l,
@@ -62,44 +91,3 @@ body:has(#radio-i-fb:checked) #dpc-info-i-fb,
 body:has(#radio-i-tki:checked) #dpc-info-i-tki,
 #youlostthegame
 { display: block }
-
-.dpc-box.dpc-box-todo { border-color: brown }
-.dpc-box.dpc-box-todo:has(.dpc-radio:checked) { border-color: coral }
-body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
-
-.dpc-box-new.dpc-box-todo { border-color: brown } .dpc-box-new.dpc-box-todo:has(.dpc-radio:checked) { border-color: coral } /* remove later */
-
-.dpc-box-new {
-  cursor: pointer;
-  width: fit-content; height: 256px;
-  /* the 404 is 256 +192 +2*8 +2*2. image + info + padding + border in that order. */
-  margin: 8px; padding: 8px;
-  border: gray 2px solid; border-radius: 16px;
-  display: flex; flex-direction: row;
-  /* justify-content: space-around; */
-}
-.dpc-box-new:has(.dpc-radio:checked) { border: 2px solid white }
-.dpc-box-new-main {
-  /* width: 236px; */
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: space-between;
-  position: relative; cursor: pointer;
-}
-.dpc-title { margin-bottom: 8px } .dpc-box-new-main div { margin-top: 8px }
-.dpc-box-new-info {
-  width: 192px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-label[for="displaytodo"] {
-  cursor: pointer;
-  background: #333;
-  padding: 2px;
-  border-radius: 4px;
-}
-body:has(#displaytodo:checked) label[for="displaytodo"] { background: #666 }
-#displaytodo-display,#displaytodo-hide{display:none}
-body:has(#displaytodo:checked) #displaytodo-hide {display:inline}
-body:not(:has(#displaytodo:checked)) #displaytodo-display {display:inline}
