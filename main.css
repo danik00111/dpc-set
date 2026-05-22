@@ -49,7 +49,7 @@ body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
   align-items: center; justify-content: space-between;
   position: relative; cursor: pointer;
 }
-.dpc-title { max-width: 236px; margin-bottom: 8px } .dpc-box-main div { margin-top: 8px }
+.dpc-title { width: 236px; margin-bottom: 8px } .dpc-box-main div { margin-top: 8px }
 .dpc-box-info {
   width: 192px;
   display: flex;
