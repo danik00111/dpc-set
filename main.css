@@ -35,7 +35,7 @@ body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
 
 .dpc-box {
   cursor: pointer;
-  width: fit-content; height: 256px;
+  width: fit-content; height: fit-content;
   /* the 404 is 256 +192 +2*8 +2*2. image + info + padding + border in that order. */
   margin: 8px; padding: 8px;
   border: gray 2px solid; border-radius: 16px;
