@@ -103,6 +103,4 @@ body.scrolled-past-header label:is([for="useb2b"],[for="displaytodo"]) {
 body.scrolled-past-header label[for="useb2b"] {left:32px}
 body.scrolled-past-header label[for="displaytodo"] {right:32px}
 
-@media screen and (max-width:555px) {
-  body.scrolled-past-header .toowide {display:none}
-}
+@media screen and (max-width:555px) { body.scrolled-past-header .toowide {display:none} }
