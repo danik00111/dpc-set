@@ -8,6 +8,7 @@
 }
 a { color: #09f } a:visited { color: #c06 }
 html { background-color: #111; }
+body { margin: 16px }
 .dpc-section-header { margin: 16px auto; }
 .dpc-box-section {
   max-width: 2048px; margin: 0 auto;
@@ -55,15 +56,16 @@ body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
   align-items: center;
   justify-content: space-around;
 }
-label[for="displaytodo"] {
+label.toggle {
   cursor: pointer;
   background: #333;
   padding: 2px;
   border-radius: 4px;
 }
-body:has(#displaytodo:checked) label[for="displaytodo"] { background: #666 }
+label.toggle:has(input[type="checkbox"]:checked) { background: #666 }
 #displaytodo-display,#displaytodo-hide {display:none}
 body:has(#displaytodo:checked) #displaytodo-hide {display:inline}
+body:has(#useb2b:checked) #useb2b-no {display:none}
 body:not(:has(#displaytodo:checked)) #displaytodo-display {display:inline}
 
 /* no this works just fine no thanks i dont need js */
@@ -90,3 +92,17 @@ body:has(#radio-i-fb:checked) #dpc-info-i-fb,
 body:has(#radio-i-tki:checked) #dpc-info-i-tki,
 #youlostthegame
 { display: block }
+
+body.scrolled-past-header label:is([for="useb2b"],[for="displaytodo"]) {
+  position: fixed; z-index: 67;
+  top: 32px;
+  padding: 4px;
+  display: block;
+  box-sizing: border-box;
+}
+body.scrolled-past-header label[for="useb2b"] {left:32px}
+body.scrolled-past-header label[for="displaytodo"] {right:32px}
+
+@media screen and (max-width:555px) {
+  body.scrolled-past-header .toowide {display:none}
+}

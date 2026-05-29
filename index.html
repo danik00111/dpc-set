@@ -34,16 +34,25 @@
   <!-- Generated with https://metatags.io -->
 </head>
 <body>
-  <h1 id="first-header">Danik0011's DPC set</h1>
-  I have sorted these by piece, then by scoring.<br/>
-  (Scoring assumes b2b going into DPC.<br/>
-  TSD/TSS score 600/400 less if they aren't b2b).<br/>
-  Similar solves are grouped together into one image.<br/>
-  Have any sort of suggestion for this page?<br/>
-  Contact me on <a href="https://discord.gg/tetrio" target="_blank">Tetriocord</a> (danik0011_) or on <a href="https://ch.tetr.io/u/618513a612d3f9b32bf66b83" target="_blank">TETR.IO</a>.<br/>
-  Note that this page only displays the DPCs I know and use.<br/><br/>
-  <input type="checkbox" id="displaytodo" hidden><label for="displaytodo"><span id="displaytodo-display">Display</span><span id="displaytodo-hide">Hide</span> DPCs I'm still learning</label><br/><br/>
-  If you didn't notice yet, this website is a work in progress.<br/>
+  <header>
+    <h1 id="first-header">Danik0011's DPC set</h1>
+    I have sorted these by piece, then by scoring.<br/><br/>
+    Scoring assumes <label class="toggle" for="useb2b">
+      <input type="checkbox" id="useb2b" checked hidden disabled>
+      <span id="useb2b-no">no</span>
+    b2b <span class="toowide">go</span>in<span class="toowide">g into DPC</span></label>
+    (toggleable).<br/><br/>
+    Similar solves are grouped together into one image.<br/>
+    Have any sort of suggestion for this page?<br/>
+    Contact me on <a href="https://discord.gg/tetrio" target="_blank">Tetriocord</a> (danik0011_) or on <a href="https://ch.tetr.io/u/618513a612d3f9b32bf66b83" target="_blank">TETR.IO</a>.<br/>
+    Note that this page only displays the DPCs I know and use.<br/><br/>
+    <label class="toggle" for="displaytodo"><input type="checkbox" id="displaytodo" hidden>
+      <span id="displaytodo-display">display</span>
+      <span id="displaytodo-hide">hide</span>
+      <span class="toowide">DPCs I'm still </span>learning
+    </label><br/><br/>
+    If you didn't notice yet, this website is a work in progress.<br/>
+  </header>
 
   <div class="dpc-section">
     
@@ -508,5 +517,6 @@
     </div>
   </div>
   <script src="./b2b-adjust.js"></script>
+  <script src="./air-detected.js"></script>
 </body>
 </html>
