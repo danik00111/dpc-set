@@ -37,11 +37,13 @@ body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
 .dpc-box {
   cursor: pointer;
   margin: 8px; padding: 8px;
-  border: gray 2px solid; border-radius: 16px;
+  border: gray solid 2px;
+  border-radius: 16px;
   display: flex; flex-direction: row;
   /* justify-content: space-around; */
 }
-.dpc-box:has(.dpc-radio:checked) { border: 2px solid white }
+.dpc-box:has(.dpc-radio:checked) {border-color:white}
+.dpc-min{border-style:solid} .dpc-rec{border-style:dashed} .dpc-opt{border-style:dotted}
 .dpc-box-main {
   /* width: 236px; */
   display: flex; flex-direction: column;
