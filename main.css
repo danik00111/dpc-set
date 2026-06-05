@@ -70,6 +70,18 @@ body:has(#displaytodo:checked) #displaytodo-hide {display:inline}
 body:has(#useb2b:checked) #useb2b-no {display:none}
 body:not(:has(#displaytodo:checked)) #displaytodo-display {display:inline}
 
+body.scrolled-past-header label:is([for="useb2b"],[for="displaytodo"]) {
+  position: fixed; z-index: 67;
+  top: 32px;
+  padding: 4px;
+  display: block;
+  box-sizing: border-box;
+}
+body.scrolled-past-header label[for="useb2b"] {left:32px}
+body.scrolled-past-header label[for="displaytodo"] {right:32px}
+
+@media screen and (max-width:555px) { body.scrolled-past-header .toowide {display:none} }
+
 /* no this works just fine no thanks i dont need js */
 body:has(#radio-o-2l:checked) #dpc-info-o-2l,
 body:has(#radio-o-tsd:checked) #dpc-info-o-tsd,
@@ -90,19 +102,7 @@ body:has(#radio-t-ball:checked) #dpc-info-t-ball,
 body:has(#radio-j-fin:checked) #dpc-info-j-fin,
 body:has(#radio-j-bb:checked) #dpc-info-j-bb,
 body:has(#radio-j-ball:checked) #dpc-info-j-ball,
-body:has(#radio-i-fb:checked) #dpc-info-i-fb,
 body:has(#radio-i-tki:checked) #dpc-info-i-tki,
-#youlostthegame
-{ display: block }
-
-body.scrolled-past-header label:is([for="useb2b"],[for="displaytodo"]) {
-  position: fixed; z-index: 67;
-  top: 32px;
-  padding: 4px;
-  display: block;
-  box-sizing: border-box;
-}
-body.scrolled-past-header label[for="useb2b"] {left:32px}
-body.scrolled-past-header label[for="displaytodo"] {right:32px}
-
-@media screen and (max-width:555px) { body.scrolled-past-header .toowide {display:none} }
+body:has(#radio-i-fb:checked) #dpc-info-i-fb,
+body:has(#radio-i-badtki:checked) #dpc-info-i-badtki,
+#youlostthegame { display: block }
