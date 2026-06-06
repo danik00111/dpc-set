@@ -12,7 +12,9 @@ const sortEverything =()=> {
   document.querySelectorAll('.dpc-box').forEach(box => {
     const scoring = box.querySelector('span.scoring');
     if (!scoring) return;
-    const score = parseFloat(scoring.textContent);
+    const pcpercent = box.querySelector('span.pcpercent');
+    const score = parseFloat(scoring.textContent) * parseFloat(pcpercent.textContent);
+    // this is actually score*100 but it does not matter here
     box.style.order = -Math.round(score * 1e3);
   });
 }
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (scoringSpan.classList.contains('start-tss')) nonB2BScore -= 400;
     box.dataset.nonB2bScore = nonB2BScore.toFixed(2);
   });
-  sortEverything(); // just in case
+  handleToggle(); // initial
   b2bToggle.addEventListener('change', handleToggle);
   b2bToggle.disabled = false; // safeguard
 });

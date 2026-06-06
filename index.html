@@ -36,9 +36,13 @@
 <body>
   <header>
     <h1 id="first-header">Danik0011's DPC set</h1>
-    I have sorted these by piece, then by scoring.<br/>
     Similar solves are grouped together into one image.<br/>
-    Solid border = required, dashed = recommended, dotted = optional.<br/>
+    Solid border = required, dashed = recommended, dotted = optional.<br/><br/>
+    Every DPC has two things attached:<br/>
+    [score if all clear]*[allclear%] (they're sorted by the product of the two),<br/>
+    and % of solve queues that don't score.<br/>
+    Bad% doesn't count fail queues - scoring% is 100% - fail% -bad%.<br/>
+    <br/>
     Note that this page only displays the DPCs I know and use.<br/><br/>
     <label class="toggle" for="displaytodo"><input type="checkbox" id="displaytodo" hidden>
       <span id="displaytodo-display">display</span>
@@ -55,7 +59,7 @@
     Contact me on <a href="https://discord.gg/tetrio" target="_blank">Tetriocord</a> (danik0011_) or on <a href="https://ch.tetr.io/u/618513a612d3f9b32bf66b83" target="_blank">TETR.IO</a>.<br/>
   </header>
 
-  <div style="height:32px"><!-- too lazy to css --></div>
+  <div style="height:64px"><!-- too lazy to css --></div>
 
   <div class="dpc-section">
     
@@ -156,7 +160,7 @@
           <span class="dpc-title">2L to ZST 7th</span>
           <img src="./img/o-dpc/2l.png" class="dpc-image">
           <input type="radio" name="o-dpc" id="radio-o-2l" class="dpc-radio">
-          <div><span class="scoring">7972.30</span> * 100%</div>
+          <div><span class="scoring">7972.30</span> * <span class="pcpercent">100</span>%</div>
           <div>37.14 bad%</div>
         </div>
       </label>
@@ -165,7 +169,7 @@
           <span class="dpc-title">TSD DPC</span>
           <img src="./img/o-dpc/tsd.png" class="dpc-image">
           <input type="radio" name="o-dpc" id="radio-o-tsd" class="dpc-radio">
-          <div><span class="scoring start-tsd">6281.17</span> * 100%</div>
+          <div><span class="scoring start-tsd">6281.17</span> * <span class="pcpercent">100</span>%</div>
           <div>27.26 bad%</div>
         </div>
       </label>
@@ -174,7 +178,7 @@
           <span class="dpc-title">Butter DPC</span>
           <img src="./img/o-dpc/butter.png" class="dpc-image">
           <input type="radio" name="o-dpc" id="radio-o-butter" class="dpc-radio">
-          <div><span class="scoring start-tsd">6184.74</span> * 100%</div>
+          <div><span class="scoring start-tsd">6184.74</span> * <span class="pcpercent">100</span>%</div>
           <div>22.06 bad%</div>
         </div>
       </label>
@@ -183,7 +187,7 @@
           <span class="dpc-title">TKI DPC</span>
           <img src="./img/o-dpc/tki.png" class="dpc-image">
           <input type="radio" name="o-dpc" id="radio-o-tki" class="dpc-radio">
-          <div><span class="scoring start-tsd">6119.19</span> * 100%</div>
+          <div><span class="scoring start-tsd">6119.19</span> * <span class="pcpercent">100</span>%</div>
           <div>30.00 bad%</div>
         </div>
       </label>
@@ -192,7 +196,7 @@
           <span class="dpc-title">Anti-Kuruma (Hold T)</span>
           <img src="./img/o-dpc/anku.png" class="dpc-image">
           <input type="radio" name="o-dpc" id="radio-o-anku" class="dpc-radio">
-          <div><span class="scoring">5702.38</span> * 100%</div>
+          <div><span class="scoring">5702.38</span> * <span class="pcpercent">100</span>%</div>
           <div>~1 bad%</div>
         </div>
       </label>
@@ -201,7 +205,7 @@
           <span class="dpc-title">Kuruma DPC</span>
           <img src="./img/o-dpc/theguynobodyinvited.png" class="dpc-image">
           <input type="radio" name="o-dpc" id="radio-o-theguynobodyinvited" class="dpc-radio">
-          <div><span class="scoring start-tsd">5910.02</span> * 100%</div>
+          <div><span class="scoring start-tsd">5910.02</span> * <span class="pcpercent">100</span>%</div>
           <div>17.22 bad%</div>
         </div>
       </label>
@@ -210,7 +214,7 @@
           <span class="dpc-title">Old Reliable SPC</span>
           <img src="./img/o-dpc/rel.png" class="dpc-image">
           <input type="radio" name="o-dpc" id="radio-o-rel" class="dpc-radio">
-          <div><span class="scoring">5485.63</span> * 100%</div>
+          <div><span class="scoring">5485.63</span> * <span class="pcpercent">100</span>%</div>
           <div>27.26 bad%</div>
         </div>
       </label>
@@ -311,7 +315,7 @@
           <span class="dpc-title">Mech v3 (Hold Z)</span>
           <img src="./img/z-dpc/mech-holdz.png" class="dpc-image">
           <input type="radio" name="z-dpc" id="radio-z-mech-holdz" class="dpc-radio">
-          <div><span class="scoring start-tsd">6522.11</span> * 100%</div>
+          <div><span class="scoring start-tsd">6522.11</span> * <span class="pcpercent">100</span>%</div>
           <div>6.468 bad%</div>
         </div>
       </label>
@@ -320,7 +324,7 @@
           <span class="dpc-title">TKI Hold O DPC</span>
           <img src="./img/z-dpc/tkiholdo.png" class="dpc-image">
           <input type="radio" name="z-dpc" id="radio-z-tkiholdo" class="dpc-radio">
-          <div><span class="scoring start-tsd">6468.16</span> * 100%</div>
+          <div><span class="scoring start-tsd">6468.16</span> * <span class="pcpercent">100</span>%</div>
           <div>13.552 bad%</div>
         </div>
       </label>
@@ -329,7 +333,7 @@
           <span class="dpc-title">TSD DPC</span>
           <img src="./img/z-dpc/tsd.png" class="dpc-image">
           <input type="radio" name="z-dpc" id="radio-z-tsd" class="dpc-radio">
-          <div><span class="scoring start-tsd">6281.17</span> * 100%</div>
+          <div><span class="scoring start-tsd">6281.17</span> * <span class="pcpercent">100</span>%</div>
           <div>27.26 bad%</div>
         </div>
       </label>
@@ -338,7 +342,7 @@
           <span class="dpc-title">TKI DPC</span>
           <img src="./img/z-dpc/tki.gif" class="dpc-image">
           <input type="radio" name="z-dpc" id="radio-z-tki" class="dpc-radio">
-          <div><span class="scoring start-tsd">6119.19</span> * 100%</div>
+          <div><span class="scoring start-tsd">6119.19</span> * <span class="pcpercent">100</span>%</div>
           <div>30.00 bad%</div>
         </div>
       </label>
@@ -347,7 +351,7 @@
           <span class="dpc-title">l*me DPC</span>
           <img src="./img/z-dpc/thisdork.png" class="dpc-image">
           <input type="radio" name="z-dpc" id="radio-z-thisdork" class="dpc-radio">
-          <div><span class="scoring start-tsd">5928.25</span> * 100%</div>
+          <div><span class="scoring start-tsd">5928.25</span> * <span class="pcpercent">100</span>%</div>
           <div>63.81 bad%</div>
         </div>
       </label>
@@ -356,7 +360,7 @@
           <span class="dpc-title">Fake Butter DPC</span>
           <img src="./img/z-dpc/fakebutter.png" class="dpc-image">
           <input type="radio" name="z-dpc" id="radio-z-fakebutter" class="dpc-radio">
-          <div><span class="scoring start-tsd">5815.40</span> * 100%</div>
+          <div><span class="scoring start-tsd">5815.40</span> * <span class="pcpercent">100</span>%</div>
           <div>33.33 bad%</div>
         </div>
       </label>
@@ -431,7 +435,7 @@
           <span class="dpc-title">TSD DPC</span>
           <img src="./img/i-dpc/tsd.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-tsd" class="dpc-radio">
-          <div><span class="scoring start-tsd">6281.17</span> * 100%</div>
+          <div><span class="scoring start-tsd">6281.17</span> * <span class="pcpercent">100</span>%</div>
           <div>27.26 bad%</div>
         </div>
       </label>
@@ -440,7 +444,7 @@
           <span class="dpc-title">TKI DPC</span>
           <img src="./img/i-dpc/tki.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-tki" class="dpc-radio">
-          <div><span class="scoring start-tsd">6119.19</span> * 100%</div>
+          <div><span class="scoring start-tsd">6119.19</span> * <span class="pcpercent">100</span>%</div>
           <div>30.00 bad%</div>
         </div>
       </label>
@@ -449,7 +453,7 @@
           <span class="dpc-title start-tsd">Pelican DPC</span>
           <img src="./img/i-dpc/pelican.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-pelican" class="dpc-radio">
-          <div><span class="scoring start-tsd">5956.71</span> * 100%</div>
+          <div><span class="scoring start-tsd">5956.71</span> * <span class="pcpercent">100</span>%</div>
           <div>27.30 bad%</div>
         </div>
       </label>
@@ -458,7 +462,7 @@
           <span class="dpc-title start-tsd">Kuruma DPC</span>
           <img src="./img/i-dpc/kuruma.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-kuruma" class="dpc-radio">
-          <div><span class="scoring start-tsd">5910.02</span> * 100%</div>
+          <div><span class="scoring start-tsd">5910.02</span> * <span class="pcpercent">100</span>%</div>
           <div>17.22 bad%</div>
         </div>
       </label>
@@ -467,7 +471,7 @@
           <span class="dpc-title start-tsd">Unnamed DPC</span>
           <img src="./img/i-dpc/latelj.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-latelj" class="dpc-radio">
-          <div><span class="scoring start-tsd">5885.90</span> * 100%</div>
+          <div><span class="scoring start-tsd">5885.90</span> * <span class="pcpercent">100</span>%</div>
           <div>44.17 bad%</div>
         </div>
       </label>
@@ -476,7 +480,7 @@
           <span class="dpc-title start-tsd">Stick DPC</span>
           <img src="./img/i-dpc/stick.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-stick" class="dpc-radio">
-          <div><span class="scoring start-tsd">5824.84</span> * 100%</div>
+          <div><span class="scoring start-tsd">5824.84</span> * <span class="pcpercent">100</span>%</div>
           <div>34.44 bad%</div>
         </div>
       </label>
@@ -485,7 +489,7 @@
           <span class="dpc-title start-tsd">Fake Butter DPC</span>
           <img src="./img/i-dpc/fb.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-fb" class="dpc-radio">
-          <div><span class="scoring start-tsd">5815.40</span> * 100%</div>
+          <div><span class="scoring start-tsd">5815.40</span> * <span class="pcpercent">100</span>%</div>
           <div>33.33 bad%</div>
         </div>
       </label>
@@ -494,7 +498,7 @@
           <span class="dpc-title start-tsd">Misread TKI</span>
           <img src="./img/i-dpc/badtki.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-badtki" class="dpc-radio">
-          <div><span class="scoring start-tsd">5653.91</span> * 100%</div>
+          <div><span class="scoring start-tsd">5653.91</span> * <span class="pcpercent">100</span>%</div>
           <div>63.33 bad%</div>
         </div>
       </label>
@@ -537,7 +541,7 @@
           <span class="dpc-title">Upside-down T SPC</span>
           <img src="./img/t-spc/ud.png" class="dpc-image">
           <input type="radio" name="t-spc" id="radio-t-ud" class="dpc-radio">
-          <div><span class="scoring start-tss">6152.08</span> * 99.92%</div>
+          <div><span class="scoring start-tss">6152.08</span> * <span class="pcpercent">99</span>.92%</div>
           <div>23.29 bad%</div>
         </div>
       </label>
@@ -546,7 +550,7 @@
           <span class="dpc-title">MKO DPC</span>
           <img src="./img/t-spc/mko.png" class="dpc-image">
           <input type="radio" name="t-spc" id="radio-t-mko" class="dpc-radio">
-          <div><span class="scoring start-tsd">6018.08</span> * 100%</div>
+          <div><span class="scoring start-tsd">6018.08</span> * <span class="pcpercent">100</span>%</div>
           <div>25.52 bad%</div>
         </div>
       </label>
@@ -555,7 +559,7 @@
           <span class="dpc-title">Ball SPC</span>
           <img src="./img/t-spc/ball.png" class="dpc-image">
           <input type="radio" name="t-spc" id="radio-t-ball" class="dpc-radio">
-          <div><span class="scoring">4659.01</span> * 100%</div>
+          <div><span class="scoring">4659.01</span> * <span class="pcpercent">100</span>%</div>
           <div>28.33 bad%</div>
         </div>
       </label>
@@ -586,25 +590,35 @@
         lol get it because its like a fallback that covers all queues and its like ball spc and like it's 🅱️ lol pls laugh<br/>
         (I almost never save L/J, and therefore do not feel any need to learn J SPC/DPC. So I just do this.)
       </div>
+      <div class="dpc-info" id="dpc-info-j-spoilbb">
+        <div>
+          <img src="./img/j-dpc/spoilbb/quad.png">
+          <img src="./img/j-dpc/spoilbb/mtss.png">
+          <img src="./img/j-dpc/spoilbb/ti-skim.png">
+        </div>
+        Do not take intentionally. I only added this one becuse I accidentally build it too much.<br/>
+        First solve covers 2/3 of queues.<br/>
+        MTSS is counted as bad% here.
+      </div>
     </div>
 
     <div class="dpc-box-section">
-      <label class="dpc-box dpc-rec dpc-box-todo" for="radio-j-bb">
-        <div class="dpc-box-main">
-          <span class="dpc-title">Blue Butter DPC</span>
-          <img src="./img/j-dpc/bb.png" class="dpc-image">
-          <input type="radio" name="j-dpc" id="radio-j-bb" class="dpc-radio">
-          <div><span class="scoring start-tsd">5897.96</span> * 100%</div>
-          <div>43.69 bad%</div>
-        </div>
-      </label>
       <label class="dpc-box dpc-opt" for="radio-j-fin">
         <div class="dpc-box-main">
           <span class="dpc-title">oo yea look at me im doing the fin t spin double yea i know im so cool DPC</span>
           <img src="./img/j-dpc/fin.png" class="dpc-image">
           <input type="radio" name="j-dpc" id="radio-j-fin" class="dpc-radio">
-          <div><span class="scoring start-tsd">5938.89</span> * 100%</div>
+          <div><span class="scoring start-tsd">5938.89</span> * <span class="pcpercent">100</span>%</div>
           <div>57.70 bad%</div>
+        </div>
+      </label>
+      <label class="dpc-box dpc-rec dpc-box-todo" for="radio-j-bb">
+        <div class="dpc-box-main">
+          <span class="dpc-title">Blue Butter DPC</span>
+          <img src="./img/j-dpc/bb.png" class="dpc-image">
+          <input type="radio" name="j-dpc" id="radio-j-bb" class="dpc-radio">
+          <div><span class="scoring start-tsd">5897.96</span> * <span class="pcpercent">100</span>%</div>
+          <div>43.69 bad%</div>
         </div>
       </label>
       <label class="dpc-box dpc-min" for="radio-j-ball">
@@ -612,8 +626,17 @@
           <span class="dpc-title">🅱️allback</span>
           <img src="./img/j-dpc/ball.png" class="dpc-image">
           <input type="radio" name="j-dpc" id="radio-j-ball" class="dpc-radio">
-          <div><span class="scoring">4059.01</span> * 100%</div>
+          <div><span class="scoring">4059.01</span> * <span class="pcpercent">100</span>%</div>
           <div>28.33 bad%</div>
+        </div>
+      </label>
+      <label class="dpc-box dpc-rec dpc-box-todo" for="radio-j-spoilbb">
+        <div class="dpc-box-main">
+          <span class="dpc-title">Expired Butter DPC</span>
+          <img src="./img/j-dpc/spoilbb.png" class="dpc-image">
+          <input type="radio" name="j-dpc" id="radio-j-spoilbb" class="dpc-radio">
+          <div><span class="scoring start-tsd">5845.96</span> * <span class="pcpercent">75.71</span>%</div>
+          <div>29.33 bad%</div>
         </div>
       </label>
     </div>
