@@ -41,7 +41,7 @@
     Every DPC has two things attached:<br/>
     [score if all clear]*[allclear%] (they're sorted by the product of the two),<br/>
     and % of solve queues that don't score.<br/>
-    Bad% doesn't count fail queues - scoring% is 100% - fail% -bad%.<br/>
+    Bad% doesn't count fail queues - scoring% is 100% -fail% -bad%.<br/>
     <br/>
     Note that this page only displays the DPCs I know and use.<br/><br/>
     <label class="toggle" for="displaytodo"><input type="checkbox" id="displaytodo" hidden>
@@ -612,13 +612,22 @@
           <div>57.70 bad%</div>
         </div>
       </label>
-      <label class="dpc-box dpc-rec dpc-box-todo" for="radio-j-bb">
+      <label class="dpc-box dpc-rec" for="radio-j-bb">
         <div class="dpc-box-main">
           <span class="dpc-title">Blue Butter DPC</span>
           <img src="./img/j-dpc/bb.png" class="dpc-image">
           <input type="radio" name="j-dpc" id="radio-j-bb" class="dpc-radio">
           <div><span class="scoring start-tsd">5897.96</span> * <span class="pcpercent">100</span>%</div>
           <div>43.69 bad%</div>
+        </div>
+      </label>
+      <label class="dpc-box dpc-rec" for="radio-j-spoilbb">
+        <div class="dpc-box-main">
+          <span class="dpc-title">Expired Butter DPC</span>
+          <img src="./img/j-dpc/spoilbb.png" class="dpc-image">
+          <input type="radio" name="j-dpc" id="radio-j-spoilbb" class="dpc-radio">
+          <div><span class="scoring start-tsd">5845.96</span> * <span class="pcpercent">75.71</span>%</div>
+          <div>29.33 bad%</div>
         </div>
       </label>
       <label class="dpc-box dpc-min" for="radio-j-ball">
@@ -628,15 +637,6 @@
           <input type="radio" name="j-dpc" id="radio-j-ball" class="dpc-radio">
           <div><span class="scoring">4059.01</span> * <span class="pcpercent">100</span>%</div>
           <div>28.33 bad%</div>
-        </div>
-      </label>
-      <label class="dpc-box dpc-rec dpc-box-todo" for="radio-j-spoilbb">
-        <div class="dpc-box-main">
-          <span class="dpc-title">Expired Butter DPC</span>
-          <img src="./img/j-dpc/spoilbb.png" class="dpc-image">
-          <input type="radio" name="j-dpc" id="radio-j-spoilbb" class="dpc-radio">
-          <div><span class="scoring start-tsd">5845.96</span> * <span class="pcpercent">75.71</span>%</div>
-          <div>29.33 bad%</div>
         </div>
       </label>
     </div>
