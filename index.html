@@ -36,7 +36,9 @@
 <body>
   <header>
     <h1 id="first-header">Danik0011's DPC set</h1>
-    Similar solves are grouped together into one image.<br/><br/>
+    DISCLAIMER: This webpage contains a lot of 'mental shortcuts' (e.g. grouping similar solves),<br/>
+    that I slowly figured out from my own experience of learning DPCs.<br/>
+    I highly recommend using other sources (like <a href="https://tetris.johnbeak.cz/dpc/recommended.php">JohnBeak's</a>) along with this one, for things like full solve lists.<br/><br/>
     Start by learning all solid-border DPCs for a piece (required).<br/>
     Then start picking up the dashed-border ones (they are often the thing that carries a DPC's score).<br/>
     Then, if you really want to optimize, try the dotted-border ones.<br/><br/>
@@ -112,8 +114,8 @@
         I only attached Fig. 2 because it is a surprise tool that will come in handy later.<br/>
         Also, it may help reduce KPP with das-preserve JT placement.<br/>
         May be used if there's no scoring and/or you don't care about it due to playing sprint.<br/>
-        Place O one away from the wall whenever possble.<br/>
-        This scores +100 more on average and reduces bad% to 26.83. (see Fig. 3.)
+        Place O one away from the wall whenever possble for.<br/>
+        This scores +99.94 more on average and reduces bad% to 26.83. (see Fig. 3.)
       </div>
       <div class="dpc-info" id="dpc-info-o-anku">
         <div>
@@ -232,11 +234,13 @@
     <div class="dpc-info-section">
       <div class="dpc-info" id="dpc-info-z-mech-holdz">
         <div>
+          <img src="./img/z-dpc/mech-holdz/tki.png">
+          <img src="./img/z-dpc/mech-holdz/tki2.png">
           <img src="./img/z-dpc/mech-holdz/familiar.png">
           <img src="./img/z-dpc/mech-holdz/tss.png">
-          <img src="./img/z-dpc/mech-holdz/zz.png">
+          <img src="./img/z-dpc/mech-holdz/float.png">
         </div>
-        Effectively turns into Shifted TKI if you place Z234. Here are the solves that don't do that.
+        Effectively turns into Shifted TKI (<span class="scoring start-tsd">6219.13</span> * 100%, 26.83 bad%) if you place Z234.
       </div>
       <div class="dpc-info" id="dpc-info-z-tkiholdo">
         <div>
@@ -274,7 +278,20 @@
         </div>
         Literally TKI with the O piece on the other side.
       </div>
-      <div class="dpc-info" id="dpc-info-z-tki">
+      <div class="dpc-info" id="dpc-info-z-elephant">
+        <div>
+          <img src="./img/z-dpc/elephant/tsd.png">
+          <img src="./img/z-dpc/elephant/tss1.png">
+          <img src="./img/z-dpc/elephant/tss2.png">
+        </div>
+        <div>
+          <img src="./img/z-dpc/elephant/skim1.gif">
+          <img src="./img/z-dpc/elephant/skim2.gif">
+          <img src="./img/z-dpc/elephant/skim3.gif">
+        </div>
+        Wow. I'm actaully considering this DPC. This is how far I've come. Unbelievable.<br/>
+        Building this DPC with I on the other side is <span class="scoring start-tsd">6226.49</span> * 98.65% (35.48 bad%) at 10 minimals.<br/>
+        Good luck with learning it, though.
       </div>
       <div class="dpc-info" id="dpc-info-z-thisdork">
         [insert a 100word rant of heavy personal hatred against l*me]<br/>
@@ -362,6 +379,15 @@
           <div>30.00 bad%</div>
         </div>
       </label>
+      <label class="dpc-box dpc-opt dpc-box-todo" for="radio-z-elephant">
+        <div class="dpc-box-main">
+          <span class="dpc-title">Elephant DPC</span>
+          <img src="./img/z-dpc/elephant.png" class="dpc-image">
+          <input type="radio" name="z-dpc" id="radio-z-elephant" class="dpc-radio">
+          <div><span class="scoring start-tsd">6099.71</span> * <span class="pcpercent">100</span>%</div>
+          <div>42.22 bad%</div>
+        </div>
+      </label>
       <label class="dpc-box dpc-min" for="radio-z-thisdork">
         <div class="dpc-box-main">
           <span class="dpc-title">l*me DPC</span>
@@ -426,7 +452,10 @@
         This DPC scores pretty bad, and I'm pretty sure TSD DPC covers all of the queues this does-<br/>
         Oh wait nope the L can be spun in after the I piece. This DPC actually does some lifting.<br/>
         Anyways, I included Kuruma here merely for score comparison with the other I DPCs.<br/>
-        And, as you can see... yeeeeaaaahhhhh.
+        And, as you can see... yeeeeaaaahhhhh.<br/><br/>
+        Oh and I don't know where to put this, so I'll say it here:<br/>
+        "I DPC with B2B going in" is mostly an oxymoron for obvious reasons.<br/>
+        Therefore, only nonb2b scoring is displayed for those, regardless of the toggle.
       </div>
       <div class="dpc-info" id="dpc-info-i-latelj">
         <div>
@@ -462,7 +491,7 @@
           <span class="dpc-title">TSD DPC</span>
           <img src="./img/i-dpc/tsd.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-tsd" class="dpc-radio">
-          <div><span class="scoring start-tsd">6281.17</span> * <span class="pcpercent">100</span>%</div>
+          <div><span class="scoring">5681.17</span> * <span class="pcpercent">100</span>%</div>
           <div>27.26 bad%</div>
         </div>
       </label>
@@ -471,7 +500,7 @@
           <span class="dpc-title">TKI DPC</span>
           <img src="./img/i-dpc/tki.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-tki" class="dpc-radio">
-          <div><span class="scoring start-tsd">6119.19</span> * <span class="pcpercent">100</span>%</div>
+          <div><span class="scoring">5519.19</span> * <span class="pcpercent">100</span>%</div>
           <div>30.00 bad%</div>
         </div>
       </label>
@@ -480,7 +509,7 @@
           <span class="dpc-title start-tsd">Pelican DPC</span>
           <img src="./img/i-dpc/pelican.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-pelican" class="dpc-radio">
-          <div><span class="scoring start-tsd">5956.71</span> * <span class="pcpercent">100</span>%</div>
+          <div><span class="scoring">5356.71</span> * <span class="pcpercent">100</span>%</div>
           <div>27.30 bad%</div>
         </div>
       </label>
@@ -489,7 +518,7 @@
           <span class="dpc-title start-tsd">Kuruma DPC</span>
           <img src="./img/i-dpc/kuruma.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-kuruma" class="dpc-radio">
-          <div><span class="scoring start-tsd">5910.02</span> * <span class="pcpercent">100</span>%</div>
+          <div><span class="scoring">5310.02</span> * <span class="pcpercent">100</span>%</div>
           <div>17.22 bad%</div>
         </div>
       </label>
@@ -498,7 +527,7 @@
           <span class="dpc-title start-tsd">Unnamed DPC</span>
           <img src="./img/i-dpc/latelj.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-latelj" class="dpc-radio">
-          <div><span class="scoring start-tsd">5885.90</span> * <span class="pcpercent">100</span>%</div>
+          <div><span class="scoring">5285.90</span> * <span class="pcpercent">100</span>%</div>
           <div>44.17 bad%</div>
         </div>
       </label>
@@ -507,7 +536,7 @@
           <span class="dpc-title start-tsd">Stick DPC</span>
           <img src="./img/i-dpc/stick.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-stick" class="dpc-radio">
-          <div><span class="scoring start-tsd">5824.84</span> * <span class="pcpercent">100</span>%</div>
+          <div><span class="scoring">5224.84</span> * <span class="pcpercent">100</span>%</div>
           <div>34.44 bad%</div>
         </div>
       </label>
@@ -516,7 +545,7 @@
           <span class="dpc-title start-tsd">Fake Butter DPC</span>
           <img src="./img/i-dpc/fb.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-fb" class="dpc-radio">
-          <div><span class="scoring start-tsd">5815.40</span> * <span class="pcpercent">100</span>%</div>
+          <div><span class="scoring">5215.40</span> * <span class="pcpercent">100</span>%</div>
           <div>33.33 bad%</div>
         </div>
       </label>
@@ -525,7 +554,7 @@
           <span class="dpc-title start-tsd">Misread TKI</span>
           <img src="./img/i-dpc/badtki.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-badtki" class="dpc-radio">
-          <div><span class="scoring start-tsd">5653.91</span> * <span class="pcpercent">100</span>%</div>
+          <div><span class="scoring">5053.91</span> * <span class="pcpercent">100</span>%</div>
           <div>63.33 bad%</div>
         </div>
       </label>
