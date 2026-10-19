@@ -419,6 +419,24 @@
   <div class="dpc-section">
     <h2 class="dpc-section-header">I DPC</h2>
     <div class="dpc-info-section">
+      <div class="dpc-info" id="dpc-info-i-hook">
+        First solve covers almost 3/4 of queues.
+        Build quite similar to TKI DPC, only swaps the OL/J <-> OJ/L.
+        <div>
+          <img src="./img/i-dpc/hook/tsd.png">
+          <img src="./img/i-dpc/hook/sz-tss.png">
+          <img src="./img/i-dpc/hook/bean.gif">
+        </div>
+        <div>
+          <img src="./img/i-dpc/hook/l-skim.png">
+          <img src="./img/i-dpc/hook/z-skim.png">
+          <img src="./img/i-dpc/hook/dono.png">
+        </div>
+        Has this diabolical TST solve (early J&lt;L&lt;T):
+        <div><img src="./img/i-dpc/hook/tst.png"></div>
+        For this DPC, I counted anything that scores TSD+TS0 or TSS+TS0 a 'no extra scoring' queue,<br/>
+        since there are no queues where the optimal is just TSD and nothing else.
+      </div>
       <div class="dpc-info" id="dpc-info-i-tsd">
         <div>
           <img src="./img/tsd/sol1.gif">
@@ -483,6 +501,15 @@
     </div>
 
     <div class="dpc-box-section">
+      <label class="dpc-box dpc-box-todo dpc-opt" for="radio-i-hook">
+        <div class="dpc-box-main">
+          <span class="dpc-title">Hook TKI DPC</span>
+          <img src="./img/i-dpc/hook.png" class="dpc-image">
+          <input type="radio" name="i-dpc" id="radio-i-hook" class="dpc-radio">
+          <div><span class="scoring">5790.25</span> * <span class="pcpercent">100</span>%</div> <!-- 6306.17 if b2b -->
+          <div>32.42 bad%</div>
+        </div>
+      </label>
       <label class="dpc-box dpc-opt" for="radio-i-tsd">
         <div class="dpc-box-main">
           <span class="dpc-title">TSD DPC</span>
@@ -521,7 +548,7 @@
       </label>
       <label class="dpc-box dpc-min" for="radio-i-latelj">
         <div class="dpc-box-main">
-          <span class="dpc-title start-tsd">Unnamed DPC</span>
+          <span class="dpc-title start-tsd">Untitled2.png</span>
           <img src="./img/i-dpc/latelj.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-latelj" class="dpc-radio">
           <div><span class="scoring">5285.90</span> * <span class="pcpercent">100</span>%</div>
