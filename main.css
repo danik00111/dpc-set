@@ -80,7 +80,7 @@ body.scrolled-past-header label:is([for="useb2b"],[for="displaytodo"]) {
 body.scrolled-past-header label[for="useb2b"] {left:32px}
 body.scrolled-past-header label[for="displaytodo"] {right:32px}
 
-@media screen and (max-width:555px) { body.scrolled-past-header .toowide {display:none} }
+@media screen and (max-width:600px) { body.scrolled-past-header .toowide {display:none} }
 
 /* no this works just fine no thanks i dont need js */
 body:has(#radio-o-2l:checked) #dpc-info-o-2l,
