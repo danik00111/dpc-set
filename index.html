@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./normalise.css">
   <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./switcher.css">
   <title>Danik0011's DPC Set</title>
 
   <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
@@ -437,6 +438,34 @@
         For this DPC, I counted anything that scores TSD+TS0 or TSS+TS0 a 'no extra scoring' queue,<br/>
         since there are no queues where the optimal is just TSD and nothing else.
       </div>
+      <div class="dpc-info" id="dpc-info-i-ooo">
+        Shares almost all solves with God DPC, but they work in slightly different circumstances.
+        <div>
+          <img src="./img/i-dpc/ooo/bean.gif">
+          <img src="./img/i-dpc/ooo/sidecleantsd.png">
+          <img src="./img/i-dpc/ooo/jz-heart.png">
+        </div>
+        <div>
+          <img src="./img/i-dpc/ooo/li-dono.png">
+          <img src="./img/i-dpc/ooo/z-tss.png">
+          <img src="./img/i-dpc/ooo/z-float.png">
+          <img src="./img/i-dpc/ooo/oddquad.png">
+        </div>
+      </div>
+      <div class="dpc-info" id="dpc-info-i-god">
+        Shares almost all solves with OOO TKI, but they work in slightly different circumstances.
+        <div>
+          <img src="./img/i-dpc/god/bean.gif">
+          <img src="./img/i-dpc/god/sidecleantsd.png">
+          <img src="./img/i-dpc/god/jz-heart.png">
+        </div>
+        <div>
+          <img src="./img/i-dpc/god/li-dono.png">
+          <img src="./img/i-dpc/god/z-tss.png">
+          <img src="./img/i-dpc/god/z-float.png">
+          <img src="./img/i-dpc/god/oddquad.png">
+        </div>
+      </div>
       <div class="dpc-info" id="dpc-info-i-tsd">
         <div>
           <img src="./img/tsd/sol1.gif">
@@ -510,6 +539,25 @@
           <div>32.42 bad%</div>
         </div>
       </label>
+      <label class="dpc-box dpc-box-todo dpc-opt" for="radio-i-ooo">
+        <div class="dpc-box-main">
+          <span class="dpc-title">Out-of-Order TKI DPC</span>
+          <img src="./img/i-dpc/ooo.png" class="dpc-image">
+          <input type="radio" name="i-dpc" id="radio-i-ooo" class="dpc-radio">
+          <div><span class="scoring">5717.86</span> * <span class="pcpercent">100</span>%</div> <!-- 6306.17 if b2b -->
+          <div>20.75 bad%</div>
+        </div>
+      </label>
+      <label class="dpc-box dpc-box-todo dpc-opt" for="radio-i-god">
+        <div class="dpc-box-main">
+          <span class="dpc-title">God DPC</span>
+          <img src="./img/i-dpc/god.png" class="dpc-image">
+          <input type="radio" name="i-dpc" id="radio-i-god" class="dpc-radio">
+          <div><span class="scoring">5703.45</span> * <span class="pcpercent">100</span>%</div> <!-- 6306.17 if b2b -->
+          <div>23.06 bad%</div>
+        </div>
+      </label>
+      <!-- ooo: 5717.86, god: 5703.45 -->
       <label class="dpc-box dpc-opt" for="radio-i-tsd">
         <div class="dpc-box-main">
           <span class="dpc-title">TSD DPC</span>
