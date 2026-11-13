@@ -33,6 +33,7 @@ img { image-rendering: pixelated }
 .dpc-box.dpc-box-todo { border-color: brown }
 .dpc-box.dpc-box-todo:has(.dpc-radio:checked) { border-color: coral }
 body:not(:has(#displaytodo:checked)) .dpc-box-todo { display: none }
+body:not(:has(#displayopt:checked)) .dpc-opt { display: none }
 
 .dpc-box {
   cursor: pointer;
@@ -65,19 +66,24 @@ label.toggle {
   border-radius: 4px;
 }
 label.toggle:has(input[type="checkbox"]:checked) { background: #666 }
+
+body:has(#useb2b:checked) #useb2b-no {display:none}
 #displaytodo-display,#displaytodo-hide {display:none}
 body:has(#displaytodo:checked) #displaytodo-hide {display:inline}
-body:has(#useb2b:checked) #useb2b-no {display:none}
 body:not(:has(#displaytodo:checked)) #displaytodo-display {display:inline}
 
-body.scrolled-past-header label:is([for="useb2b"],[for="displaytodo"]) {
+#displayopt-display,#displayopt-hide {display:none}
+body:has(#displayopt:checked) #displayopt-hide {display:inline}
+body:not(:has(#displayopt:checked)) #displayopt-display {display:inline}
+
+body.scrolled-past-header label:is([for="useb2b"],[for="displaytodo"],[for="displayopt"]) {
   position: fixed; z-index: 67;
-  top: 32px;
   padding: 4px;
   display: block;
   box-sizing: border-box;
 }
-body.scrolled-past-header label[for="useb2b"] {left:32px}
-body.scrolled-past-header label[for="displaytodo"] {right:32px}
+body.scrolled-past-header label[for="useb2b"] {top:32px;left:32px}
+body.scrolled-past-header label[for="displaytodo"] {top:32px;right:32px}
+body.scrolled-past-header label[for="displayopt"] {top:64px;right:32px}
 
 @media screen and (max-width:600px) { body.scrolled-past-header .toowide {display:none} }

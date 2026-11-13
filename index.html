@@ -42,7 +42,12 @@
     I highly recommend using other sources (like <a href="https://tetris.johnbeak.cz/dpc/recommended.php">JohnBeak's</a>) along with this one, for things like full solve lists.<br/><br/>
     Start by learning all solid-border DPCs for a piece (required).<br/>
     Then start picking up the dashed-border ones (they are often the thing that carries a DPC's score).<br/>
-    Then, if you really want to optimize, try the dotted-border ones.<br/><br/>
+    Then, if you really want to optimize, try the dotted-border ones. Or don't. Your choice.<br/><br/>
+    <label class="toggle" for="displayopt"><input type="checkbox" id="displayopt" hidden checked>
+      <span id="displayopt-display">display</span>
+      <span id="displayopt-hide">hide</span>
+      opt<span class="toowide">ional DPCs</span>
+    </label><br/><br/>
     Every DPC has two things attached:<br/>
     [score if all clear]*[allclear%] (they're sorted by the product of the two),<br/>
     and % of solve queues that don't score.<br/>
@@ -180,7 +185,7 @@
           <div>27.26 bad%</div>
         </div>
       </label>
-      <label class="dpc-box dpc-opt" for="radio-o-butter">
+      <label class="dpc-box dpc-rec" for="radio-o-butter">
         <div class="dpc-box-main">
           <span class="dpc-title">Butter DPC</span>
           <img src="./img/o-dpc/butter.png" class="dpc-image">
@@ -535,7 +540,7 @@
           <span class="dpc-title">Hook TKI DPC</span>
           <img src="./img/i-dpc/hook.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-hook" class="dpc-radio">
-          <div><span class="scoring">5790.25</span> * <span class="pcpercent">100</span>%</div> <!-- 6306.17 if b2b -->
+          <div><span class="scoring">5790.25</span> * <span class="pcpercent">100</span>%</div> <!-- 6306.17 if b2b i think -->
           <div>32.42 bad%</div>
         </div>
       </label>
@@ -544,7 +549,7 @@
           <span class="dpc-title">Out-of-Order TKI DPC</span>
           <img src="./img/i-dpc/ooo.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-ooo" class="dpc-radio">
-          <div><span class="scoring">5717.86</span> * <span class="pcpercent">100</span>%</div> <!-- 6306.17 if b2b -->
+          <div><span class="scoring">5717.86</span> * <span class="pcpercent">100</span>%</div>
           <div>20.75 bad%</div>
         </div>
       </label>
@@ -553,11 +558,10 @@
           <span class="dpc-title">God DPC</span>
           <img src="./img/i-dpc/god.png" class="dpc-image">
           <input type="radio" name="i-dpc" id="radio-i-god" class="dpc-radio">
-          <div><span class="scoring">5703.45</span> * <span class="pcpercent">100</span>%</div> <!-- 6306.17 if b2b -->
+          <div><span class="scoring">5703.45</span> * <span class="pcpercent">100</span>%</div>
           <div>23.06 bad%</div>
         </div>
       </label>
-      <!-- ooo: 5717.86, god: 5703.45 -->
       <label class="dpc-box dpc-opt" for="radio-i-tsd">
         <div class="dpc-box-main">
           <span class="dpc-title">TSD DPC</span>
@@ -673,7 +677,7 @@
           <div>23.29 bad%</div>
         </div>
       </label>
-      <label class="dpc-box dpc-opt" for="radio-t-mko">
+      <label class="dpc-box dpc-rec" for="radio-t-mko">
         <div class="dpc-box-main">
           <span class="dpc-title">MKO DPC</span>
           <img src="./img/t-spc/mko.png" class="dpc-image">
